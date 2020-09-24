@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "d:\\Igor\\GitHub\\Optical-Mark-Registration-PDF-Reader\\venv\\Scripts\\python.exe",
+  "editor.formatOnSave": false,
+  "python.linting.pylintArgs": ["--generate-members"]
+}
