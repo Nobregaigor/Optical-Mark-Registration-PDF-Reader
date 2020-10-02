@@ -1,0 +1,8 @@
+pandas==1.1.2
+click==7.1.2
+imutils==0.5.3
+pyfiglet==0.8.post1
+yagmail==0.13.241
+opencv_python==4.4.0.42
+numpy==1.19.2
+pdf2image==1.14.0

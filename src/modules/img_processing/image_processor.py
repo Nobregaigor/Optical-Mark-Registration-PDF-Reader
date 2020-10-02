@@ -3,7 +3,7 @@ import imutils
 import numpy as np
 from imutils import contours
 
-class Image_pre_processor():
+class Image_Processor():
   def __init__(self, path_to_file):
     self.path_to_file = path_to_file
     self.img = cv2.imread(path_to_file)
@@ -216,7 +216,7 @@ class Image_pre_processor():
         if n_cols != 4:
 
           last_x, _, _, _ = cv2.boundingRect(columns[0])
-          last_x = x
+          last_x = 0
           for i, c in enumerate(columns[1:]):
             x, y, w, h = cv2.boundingRect(c)
             if abs(x - last_x + 5) > w * 0.5:
@@ -312,7 +312,7 @@ class Image_pre_processor():
     return bubbled
 
   def get_numerical_data(self, show=False):
-      mark_columns, mark_columns_thresh = self.get_mark_columns(show=True)
+      mark_columns, mark_columns_thresh = self.get_mark_columns()
 
       num_data = []
       for i, (column, column_thresh) in enumerate(zip(mark_columns, mark_columns_thresh)):
